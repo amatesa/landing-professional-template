@@ -484,6 +484,7 @@ img {
 .trusted-logos-row {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 3.5rem;
   overflow-x: auto;
   padding-bottom: 0.5rem;
@@ -801,5 +802,6 @@ img {
   font-size: 0.85rem;
   color: var(--text-subtle);
 }
+
 
 
