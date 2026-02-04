@@ -458,7 +458,7 @@ img {
    ========================= */
 
 .trusted {
-  padding-block: 3.5rem;
+  padding-block: 2.5rem;
   border-top: 1px solid rgba(148, 163, 184, 0.1);
   border-bottom: 1px solid rgba(15, 23, 42, 0.9);
   background: radial-gradient(
@@ -501,7 +501,7 @@ img {
 
 .trusted-logo img {
   display: block;
-  width: 200px;
+  width: 250px;
   max-width: none;
   height: auto;
   opacity: 0.7;
@@ -524,7 +524,7 @@ img {
   }
 
   .trusted-logo img {
-    width: 160px;
+    width: 200px;
   }
 }
 
@@ -802,6 +802,7 @@ img {
   font-size: 0.85rem;
   color: var(--text-subtle);
 }
+
 
 
 
