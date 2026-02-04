@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Northbridge Coaching – Professional Landing Template</title>
+  <meta
+    name="description"
+    content="Northbridge Coaching – a modern, responsive landing page template for professional coaches and consultants."
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- AOS (on-scroll animations) – we can tune later -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+  />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <img
+          src="assets/logo-mark.svg"
+          alt=""
+          class="brand-mark"
+        />
+        <span class="brand-text">
+          Northbridge <span>Coaching</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button
+        class="nav-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        <img
+          src="assets/menu-2.svg"
+          alt=""
+          class="icon"
+          data-icon="open"
+        />
+        <img
+          src="assets/x.svg"
+          alt=""
+          class="icon icon-hidden"
+          data-icon="close"
+        />
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content" data-aos="fade-up">
+          <p class="eyebrow">Executive coaching for real decisions</p>
+          <h1 id="hero-title">
+            Clarity for leaders who can’t afford noise.
+          </h1>
+          <p class="hero-subtitle">
+            Northbridge Coaching helps senior professionals make confident,
+            well-framed decisions, without adding more meetings to their week.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              Book a call
+            </a>
+            <a href="#process" class="btn btn-ghost">
+              <img
+                src="assets/arrow-down.svg"
+                alt=""
+                class="icon-sm"
+              />
+              <span>See how it works</span>
+            </a>
+          </div>
+
+          <ul class="hero-highlights">
+            <li>1:1 sessions tailored to complex roles</li>
+            <li>Thought partnership, not motivational talk</li>
+            <li>Designed for remote-first professionals</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" data-aos="fade-left">
+          <img
+            src="assets/hero.webp"
+            alt="Abstract dark waves background"
+            class="hero-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-header" data-aos="fade-up">
+          <p class="eyebrow">What we work on</p>
+          <h2 id="services-title">Services designed for high-stakes work</h2>
+          <p class="section-lead">
+            Each track is focused on one thing: helping you make better decisions
+            with less friction, across your team and stakeholders.
+          </p>
+        </header>
+
+        <div class="cards-grid" data-aos="fade-up" data-aos-delay="100">
+          <!-- Service 1 -->
+          <article class="card">
+            <div class="card-icon">
+              <img
+                src="assets/target.svg"
+                alt=""
+                class="icon-lg"
+              />
+            </div>
+            <h3>Strategic Clarity Sessions</h3>
+            <p>
+              Deep-dive conversations to untangle complex decisions, align your
+              options, and leave with a clear next move you can explain to others.
+            </p>
+            <ul class="card-list">
+              <li>Frame high-impact decisions</li>
+              <li>Clarify trade-offs and risks</li>
+              <li>Define what “good” looks like</li>
+            </ul>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="card">
+            <div class="card-icon">
+              <img
+                src="assets/trending-up.svg"
+                alt=""
+                class="icon-lg"
+              />
+            </div>
+            <h3>Performance & Focus Coaching</h3>
+            <p>
+              Ongoing coaching to protect your focus, manage competing priorities,
+              and build routines that survive busy quarters.
+            </p>
+            <ul class="card-list">
+              <li>Design realistic weekly rhythms</li>
+              <li>Reduce context-switching overhead</li>
+              <li>Set guardrails for your time</li>
+            </ul>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="card">
+            <div class="card-icon">
+              <img
+                src="assets/layers.svg"
+                alt=""
+                class="icon-lg"
+              />
+            </div>
+            <h3>Systems & Stakeholder Alignment</h3>
+            <p>
+              Work sessions to map your stakeholders, expectations and feedback
+              loops, so communication stops being a source of friction.
+            </p>
+            <ul class="card-list">
+              <li>Map key relationships and risks</li>
+              <li>Clarify expectations and ownership</li>
+              <li>Design simple, repeatable check-ins</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS (estructura base, lo estilamos después) -->
+    <section id="process" class="section section-muted" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">How it works</p>
+          <h2 id="process-title">A simple process built around your calendar</h2>
+          <p class="section-lead">
+            No funnels, no homework packs. Just a clear sequence that respects
+            the reality of your role.
+          </p>
+        </header>
+
+        <div class="process-grid">
+          <article class="process-step">
+            <div class="process-icon">
+              <img src="assets/search.svg" alt="" class="icon-md" />
+            </div>
+            <h3>1. Discover</h3>
+            <p>
+              We start with a focused intake session to understand your role,
+              context and current decision load.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <div class="process-icon">
+              <img src="assets/clipboard-list.svg" alt="" class="icon-md" />
+            </div>
+            <h3>2. Plan</h3>
+            <p>
+              Together we define a short, realistic coaching track that fits
+              your schedule and priorities.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <div class="process-icon">
+              <img src="assets/circle-check-big.svg" alt="" class="icon-md" />
+            </div>
+            <h3>3. Execute</h3>
+            <p>
+              We meet regularly to work through decisions, track progress and
+              adjust as your context evolves.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL (placeholder corto) -->
+    <section class="section" aria-label="Client testimonial">
+      <div class="container">
+        <figure class="testimonial">
+          <blockquote>
+            “Our sessions didn’t add more noise to my week — they gave me a way
+            to think more clearly about the decisions that actually matter.”
+          </blockquote>
+          <figcaption>
+            Head of Operations, fintech client (name withheld by request)
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CONTACT / CTA FINAL -->
+    <section id="contact" class="section section-accent" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Ready when you are</p>
+          <h2 id="contact-title">Let’s see if we’re a good fit</h2>
+          <p class="section-lead">
+            Share a few lines about your role and what you’re navigating right
+            now. If coaching is not the right tool, we’ll say so.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a
+            href="mailto:hello@northbridge.coaching?subject=Coaching%20inquiry"
+            class="btn btn-primary btn-full"
+          >
+            <img src="assets/mail.svg" alt="" class="icon-sm" />
+            <span>Email Northbridge</span>
+          </a>
+          <div class="contact-meta">
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+              class="contact-link"
+            >
+              <img src="assets/brand-linkedin.svg" alt="" class="icon-sm" />
+              <span>Connect on LinkedIn</span>
+            </a>
+            <a href="#" class="contact-link">
+              <img src="assets/world.svg" alt="" class="icon-sm" />
+              <span>Visit website (placeholder)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-meta">
+        Northbridge Coaching – Landing template by Alejandro Matesa
+      </p>
+      <a
+        href="https://amatesa.github.io/portfolio"
+        class="footer-link"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img src="assets/arrow-left.svg" alt="" class="icon-sm" />
+        <span>Back to portfolio</span>
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
