@@ -1,29 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const body = document.body;
-  const navToggle = document.querySelector(".nav-toggle");
-  const mainNav = document.querySelector(".main-nav");
-  const navLinks = document.querySelectorAll(".nav-list a");
-
-  if (navToggle && mainNav) {
-    navToggle.addEventListener("click", () => {
-      const isOpen = body.classList.toggle("nav-open");
-      navToggle.setAttribute("aria-expanded", String(isOpen));
+  // Inicializar animaciones de Scroll
+  if (typeof AOS !== 'undefined') {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-out-expo",
+      once: true,
+      offset: 100
     });
+  }
 
-    navLinks.forEach((link) => {
-      link.addEventListener("click", () => {
-        body.classList.remove("nav-open");
-        navToggle.setAttribute("aria-expanded", "false");
+  // Suavizado de scroll para los links del menú
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
       });
     });
-  }
-
-  // Init AOS (scroll animations)
-  if (window.AOS) {
-    AOS.init({
-      duration: 800,
-      easing: "ease-out-cubic",
-      once: true
-    });
-  }
+  });
 });
