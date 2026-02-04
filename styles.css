@@ -47,7 +47,7 @@ body {
 /* UTILITIES */
 
 .container {
-  width: min(1120px, 100% - 2.5rem);
+  width: min(1180px, 100% - 3rem);
   margin-inline: auto;
 }
 
@@ -86,8 +86,8 @@ body {
   background: linear-gradient(
     to bottom,
     rgba(2, 6, 23, 0.96),
-    rgba(2, 6, 23, 0.86),
-    transparent
+    rgba(2, 6, 23, 0.72),
+    rgba(2, 6, 23, 0)
   );
   border-bottom: 1px solid rgba(15, 23, 42, 0.8);
 }
@@ -212,7 +212,7 @@ body {
   padding-block: 5.5rem 4.5rem;
   background-image: url("assets/hero-desktop.webp");
   background-size: cover;
-  background-position: 75% center;
+  background-position: 80% center;
   color: var(--text-main);
 }
 
@@ -308,6 +308,17 @@ body {
   border-color: var(--accent);
 }
 
+.btn-secondary {
+  background: rgba(15, 23, 42, 0.9);
+  border-color: rgba(148, 163, 184, 0.55);
+  color: var(--text-main);
+}
+
+.btn-secondary:hover {
+  background: rgba(15, 23, 42, 1);
+  border-color: var(--accent);
+}
+
 .btn-icon {
   width: 1.2rem;
   height: 1.2rem;
@@ -322,7 +333,7 @@ body {
 /* TRUSTED BY */
 
 .trusted {
-  padding-block: 1.5rem 2.5rem;
+  padding-block: 1.5rem 2.2rem;
   border-top: 1px solid rgba(15, 23, 42, 0.9);
   border-bottom: 1px solid rgba(15, 23, 42, 0.9);
   background: linear-gradient(to bottom, rgba(15, 23, 42, 0.7), transparent);
@@ -368,13 +379,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.65;
+  opacity: 0.7;
   transition: opacity 0.16s ease, transform 0.16s ease;
 }
 
 .trusted-logo img {
-  height: 32px;
-  max-width: 120px;
+  height: 40px;
+  max-width: 140px;
   filter: grayscale(100%);
 }
 
@@ -535,25 +546,15 @@ body {
 .cta-actions {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.2rem;
   flex-wrap: wrap;
   margin-top: 1.7rem;
 }
 
-.cta-links {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.cta-link {
-  font-size: 0.9rem;
-  color: var(--accent-secondary);
-  text-decoration: none;
-}
-
-.cta-link:hover {
-  text-decoration: underline;
+.cta-note {
+  margin-top: 0.9rem;
+  font-size: 0.82rem;
+  color: var(--text-subtle);
 }
 
 .back-to-portfolio {
@@ -661,8 +662,8 @@ body {
   }
 
   .trusted-logo img {
-    height: 28px;
-    max-width: 110px;
+    height: 32px;
+    max-width: 120px;
   }
 
   .card-grid {
@@ -699,5 +700,6 @@ body {
     padding-inline: 1.6rem;
   }
 }
+
 
 
