@@ -1,19 +1,39 @@
+// Mobile navigation toggle
 document.addEventListener("DOMContentLoaded", () => {
-  if (window.AOS) {
-    AOS.init({
-      duration: 900,
-      easing: "ease-out-cubic",
-      once: true,
-      offset: 80
+  const navToggle = document.querySelector(".nav-toggle");
+  const body = document.body;
+
+  if (navToggle) {
+    navToggle.addEventListener("click", () => {
+      const isOpen = body.classList.toggle("nav-open");
+      navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
   }
 
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener("click", e => {
-      const target = document.querySelector(link.getAttribute("href"));
-      if (!target) return;
-      e.preventDefault();
-      target.scrollIntoView({ behavior: "smooth" });
+  // Close nav on link click (mobile)
+  document.querySelectorAll('.main-nav a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", () => {
+      if (body.classList.contains("nav-open")) {
+        body.classList.remove("nav-open");
+        navToggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  });
+
+  // Smooth scroll for in-page anchors
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", (event) => {
+      const targetId = anchor.getAttribute("href");
+      if (!targetId || targetId === "#") return;
+
+      const targetEl = document.querySelector(targetId);
+      if (!targetEl) return;
+
+      event.preventDefault();
+      targetEl.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
     });
   });
 });
