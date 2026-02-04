@@ -1,39 +1,41 @@
-// Mobile navigation toggle
+// Basic interactive behavior for the landing
 document.addEventListener("DOMContentLoaded", () => {
   const navToggle = document.querySelector(".nav-toggle");
-  const body = document.body;
+  const siteNav = document.querySelector(".site-nav");
 
-  if (navToggle) {
+  // Mobile nav toggle
+  if (navToggle && siteNav) {
     navToggle.addEventListener("click", () => {
-      const isOpen = body.classList.toggle("nav-open");
-      navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      const isOpen = navToggle.classList.toggle("is-open");
+      siteNav.classList.toggle("is-open", isOpen);
+      navToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    // Close menu when clicking on a nav link (anchor to section)
+    siteNav.querySelectorAll('a[href^="#"]').forEach((link) => {
+      link.addEventListener("click", () => {
+        if (siteNav.classList.contains("is-open")) {
+          siteNav.classList.remove("is-open");
+          navToggle.classList.remove("is-open");
+          navToggle.setAttribute("aria-expanded", "false");
+        }
+      });
     });
   }
 
-  // Close nav on link click (mobile)
-  document.querySelectorAll('.main-nav a[href^="#"]').forEach((link) => {
-    link.addEventListener("click", () => {
-      if (body.classList.contains("nav-open")) {
-        body.classList.remove("nav-open");
-        navToggle.setAttribute("aria-expanded", "false");
-      }
-    });
-  });
-
-  // Smooth scroll for in-page anchors
+  // Smooth scroll for internal anchors (nice but simple)
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", (event) => {
       const targetId = anchor.getAttribute("href");
       if (!targetId || targetId === "#") return;
 
-      const targetEl = document.querySelector(targetId);
-      if (!targetEl) return;
+      const target = document.querySelector(targetId);
+      if (!target) return;
 
       event.preventDefault();
-      targetEl.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
 });
+
+
