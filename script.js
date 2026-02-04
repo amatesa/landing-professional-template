@@ -1,21 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Inicializar animaciones de Scroll
-  if (typeof AOS !== 'undefined') {
+  if (window.AOS) {
     AOS.init({
-      duration: 1000,
-      easing: "ease-out-expo",
+      duration: 900,
+      easing: "ease-out-cubic",
       once: true,
-      offset: 100
+      offset: 80
     });
   }
 
-  // Suavizado de scroll para los links del menú
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener("click", e => {
+      const target = document.querySelector(link.getAttribute("href"));
+      if (!target) return;
       e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
+      target.scrollIntoView({ behavior: "smooth" });
     });
   });
 });
