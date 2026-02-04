@@ -2,124 +2,165 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Northbridge Coaching – Executive Coaching Landing Page Template</title>
-
   <meta
-    name="description"
-    content="Northbridge Coaching is an executive coaching landing page template designed for senior professionals, built with a premium dark UI, hero image, client logos, services and clear contact CTA."
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
   />
-
-  <!-- Typography -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
+  <title>Northbridge Coaching – Executive Coaching Landing</title>
 
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Optional favicon using your logo-mark.svg -->
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="assets/logo/logo-mark.svg"
+  />
 </head>
 <body>
+  <!-- HEADER -->
   <header class="site-header">
-    <div class="container header-inner">
+    <div class="header-inner">
       <a href="#top" class="brand">
-        <div class="brand-mark" aria-hidden="true">N</div>
+        <span class="brand-mark">N</span>
         <span class="brand-text">
-          Northbridge
-          <span>Coaching</span>
+          Northbridge <span>Coaching</span>
         </span>
       </a>
 
-      <nav class="main-nav" aria-label="Primary">
-        <ul class="nav-list">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <nav class="site-nav">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
       </nav>
 
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
+      <button
+        class="nav-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        <span class="nav-toggle-lines"></span>
       </button>
     </div>
   </header>
 
-  <main id="top">
+  <main id="top" class="page-main">
     <!-- HERO -->
-    <section class="hero">
-      <div class="hero-overlay" aria-hidden="true"></div>
-      <div class="container hero-inner">
-        <p class="eyebrow">Executive coaching for real decisions</p>
-        <h1 class="hero-title">
-          Clarity for leaders who make
-          <span class="hero-title-emphasis">hard calls.</span>
-        </h1>
-        <p class="hero-lead">
-          Northbridge helps senior professionals frame complex decisions and move forward
-          without adding more noise to their calendar.
-        </p>
-        <p class="hero-meta">
-          1:1 executive coaching · Remote-first · Confidential
-        </p>
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="page-shell hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            EXECUTIVE COACHING FOR REAL DECISIONS
+          </p>
 
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">
-            <span class="btn-icon" aria-hidden="true">✉</span>
-            Book a conversation
-          </a>
-          <a href="#process" class="btn btn-ghost">
-            See how it works
-            <span aria-hidden="true">↗</span>
-          </a>
+          <h1 id="hero-heading" class="hero-title">
+            Clarity for leaders who
+            <span class="hero-title-break">make <span class="accent-script">hard calls.</span></span>
+          </h1>
+
+          <p class="hero-lead">
+            Northbridge helps senior professionals frame complex decisions
+            and move forward without adding more noise to their calendar.
+          </p>
+
+          <p class="hero-meta">
+            1:1 executive coaching · Remote-first · Confidential
+          </p>
+
+          <div class="hero-cta">
+            <a
+              href="mailto:hello@northbridge.com"
+              class="btn-primary"
+            >
+              <span class="btn-icon">✉️</span>
+              <span>Book a conversation</span>
+            </a>
+
+            <a href="#process" class="btn-ghost">
+              <span>See how it works</span>
+              <span class="btn-arrow">➜</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- TRUSTED BY -->
-    <section class="trusted">
-      <div class="container trusted-inner">
-        <p class="trusted-label">Trusted by leaders from</p>
-        <div class="trusted-logos" aria-label="Client companies">
+    <section class="trusted" aria-label="Trusted by clients">
+      <div class="page-shell">
+        <p class="trusted-kicker">Trusted by leaders from</p>
+        <div class="trusted-logos-row">
           <figure class="trusted-logo">
-            <img src="assets/client/client-aurora.png" alt="Aurora" loading="lazy" />
+            <img
+              src="assets/client/client-aurora.png"
+              alt="Aurora"
+              loading="lazy"
+            />
           </figure>
           <figure class="trusted-logo">
-            <img src="assets/client/client-nexus.png" alt="Nexus Global" loading="lazy" />
+            <img
+              src="assets/client/client-nexus.png"
+              alt="Nexus Global"
+              loading="lazy"
+            />
           </figure>
           <figure class="trusted-logo">
-            <img src="assets/client/client-stratos.png" alt="Stratos" loading="lazy" />
+            <img
+              src="assets/client/client-stratos.png"
+              alt="Stratos"
+              loading="lazy"
+            />
           </figure>
           <figure class="trusted-logo">
-            <img src="assets/client/client-cosmos.png" alt="Cosmos" loading="lazy" />
+            <img
+              src="assets/client/client-cosmos.png"
+              alt="Cosmos"
+              loading="lazy"
+            />
           </figure>
           <figure class="trusted-logo">
-            <img src="assets/client/client-zenith.png" alt="Zenith" loading="lazy" />
+            <img
+              src="assets/client/client-zenith.png"
+              alt="Zenith"
+              loading="lazy"
+            />
           </figure>
         </div>
       </div>
     </section>
 
     <!-- SERVICES -->
-    <section id="services" class="section services">
-      <div class="container">
-        <p class="eyebrow">What we work on</p>
-        <h2 class="section-title">Services designed for high-stakes work</h2>
-        <p class="section-intro">
-          Each track focuses on helping you make better decisions with less friction across your team
-          and stakeholders.
-        </p>
+    <section
+      class="section services"
+      id="services"
+      aria-labelledby="services-heading"
+    >
+      <div class="page-shell">
+        <header class="section-header">
+          <p class="section-kicker">WHAT WE WORK ON</p>
+          <h2 id="services-heading" class="section-title">
+            Services designed for high-stakes work
+          </h2>
+          <p class="section-intro">
+            Each track focuses on helping you make better decisions with less
+            friction across your team and stakeholders.
+          </p>
+        </header>
 
         <div class="card-grid">
           <article class="service-card">
-            <div class="card-icon" aria-hidden="true">🎯</div>
-            <h3>Strategic Clarity Sessions</h3>
-            <p>
-              Deep-dive conversations to untangle complex decisions, align your options, and leave with
-              a clear next move you can explain to others.
+            <div class="service-icon-circle">
+              <span class="service-icon">🎯</span>
+            </div>
+            <h3 class="service-title">
+              Strategic Clarity Sessions
+            </h3>
+            <p class="service-body">
+              Deep-dive conversations to untangle complex decisions, align
+              your options and leave with a clear next move you can explain
+              to others.
             </p>
-            <ul>
+            <ul class="service-list">
               <li>Frame high-impact decisions</li>
               <li>Clarify trade-offs and risks</li>
               <li>Define what “good” looks like</li>
@@ -127,13 +168,17 @@
           </article>
 
           <article class="service-card">
-            <div class="card-icon" aria-hidden="true">📈</div>
-            <h3>Performance &amp; Focus Coaching</h3>
-            <p>
-              Ongoing coaching to protect your focus, manage competing priorities, and build routines
-              that survive busy quarters.
+            <div class="service-icon-circle">
+              <span class="service-icon">⏱️</span>
+            </div>
+            <h3 class="service-title">
+              Performance &amp; Focus Coaching
+            </h3>
+            <p class="service-body">
+              Ongoing coaching to protect your focus, manage competing
+              priorities and build routines that survive busy quarters.
             </p>
-            <ul>
+            <ul class="service-list">
               <li>Design realistic weekly rhythms</li>
               <li>Reduce context-switching overhead</li>
               <li>Set guardrails for your time</li>
@@ -141,13 +186,18 @@
           </article>
 
           <article class="service-card">
-            <div class="card-icon" aria-hidden="true">🧩</div>
-            <h3>Systems &amp; Stakeholder Alignment</h3>
-            <p>
-              Work sessions to map your stakeholders, expectations and feedback loops, so
-              communication stops being a source of friction.
+            <div class="service-icon-circle">
+              <span class="service-icon">🧩</span>
+            </div>
+            <h3 class="service-title">
+              Systems &amp; Stakeholder Alignment
+            </h3>
+            <p class="service-body">
+              Work sessions to map your stakeholders, expectations and
+              feedback loops, so communication stops being a source of
+              friction.
             </p>
-            <ul>
+            <ul class="service-list">
               <li>Map key relationships and risks</li>
               <li>Clarify expectations and ownership</li>
               <li>Design simple, repeatable check-ins</li>
@@ -158,106 +208,123 @@
     </section>
 
     <!-- PROCESS -->
-    <section id="process" class="section process">
-      <div class="container">
-        <p class="eyebrow">How it works</p>
-        <h2 class="section-title">A simple process built around your calendar</h2>
-        <p class="section-intro">
-          No funnels, no homework packs. Just a clear sequence that respects the reality of your role.
-        </p>
+    <section
+      class="section process"
+      id="process"
+      aria-labelledby="process-heading"
+    >
+      <div class="page-shell">
+        <header class="section-header">
+          <p class="section-kicker">HOW IT WORKS</p>
+          <h2 id="process-heading" class="section-title">
+            A simple process built around your calendar
+          </h2>
+          <p class="section-intro">
+            No funnels, no homework packs. Just a clear sequence that respects
+            the reality of your role.
+          </p>
+        </header>
 
-        <div class="process-steps">
-          <article class="process-step">
-            <div class="step-icon" aria-hidden="true">1</div>
+        <ol class="process-steps">
+          <li class="process-step">
+            <div class="process-icon-circle">
+              <span>1</span>
+            </div>
             <h3>Discover</h3>
             <p>
-              We start with a focused intake session to understand your role, context and current
-              decision load.
+              We start with a focused intake session to understand your role,
+              context and current decision load.
             </p>
-          </article>
-
-          <article class="process-step">
-            <div class="step-icon" aria-hidden="true">2</div>
+          </li>
+          <li class="process-step">
+            <div class="process-icon-circle">
+              <span>2</span>
+            </div>
             <h3>Plan</h3>
             <p>
-              Together we define a short, realistic coaching track that fits your schedule and
-              priorities.
+              Together we define a short, realistic coaching track that fits
+              your schedule and priorities.
             </p>
-          </article>
-
-          <article class="process-step">
-            <div class="step-icon" aria-hidden="true">3</div>
+          </li>
+          <li class="process-step">
+            <div class="process-icon-circle">
+              <span>3</span>
+            </div>
             <h3>Execute</h3>
             <p>
-              We meet regularly to work through decisions, track progress and adjust as your context
-              evolves.
+              We meet regularly to work through decisions, track progress and
+              adjust as your context evolves.
             </p>
-          </article>
-        </div>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!-- TESTIMONIAL -->
-    <section class="section testimonial">
-      <div class="container">
-        <figure class="testimonial-card">
-          <blockquote>
-            “Our sessions didn’t add more noise to my week — they gave me a way to think more clearly
-            about the decisions that actually matter.”
-          </blockquote>
-          <figcaption>
-            Head of Operations, fintech client  
-            <span class="testimonial-meta">(name withheld by request)</span>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- CONTACT / CTA -->
-    <section id="contact" class="section contact">
-      <div class="container">
+    <!-- CTA FINAL -->
+    <section
+      class="section cta"
+      id="contact"
+      aria-labelledby="cta-heading"
+    >
+      <div class="page-shell">
         <div class="cta-card">
-          <p class="eyebrow">Ready when you are</p>
-          <h2 class="section-title">Let’s see if we’re a good fit</h2>
-          <p class="section-intro">
-            Share a few lines about your role and what you’re navigating right now. If coaching is not
-            the right tool, we’ll say so.
+          <p class="section-kicker">READY WHEN YOU ARE</p>
+          <h2 id="cta-heading" class="section-title">
+            Let’s see if we’re a good fit
+          </h2>
+          <p class="cta-copy">
+            Share a few lines about your role and what you’re navigating
+            right now. If coaching is not the right tool, we’ll say so.
           </p>
 
           <div class="cta-actions">
-            <a href="mailto:hello@northbridge.com" class="btn btn-primary">
-              <span class="btn-icon" aria-hidden="true">✉</span>
-              Email Northbridge
+            <a
+              href="mailto:hello@northbridge.com"
+              class="btn-primary btn-large"
+            >
+              <span class="btn-icon">✉️</span>
+              <span>Email Northbridge</span>
             </a>
 
-            <a href="#" class="btn btn-secondary">
-              Connect on LinkedIn
-            </a>
+            <div class="cta-links">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noreferrer"
+                class="cta-link"
+              >
+                Connect on LinkedIn
+              </a>
+              <a href="#" class="cta-link">
+                Visit website
+              </a>
+            </div>
           </div>
-
-          <p class="cta-note">
-            In a live project you can swap these links for your calendar app, contact form or website.
-          </p>
         </div>
 
-        <div class="back-to-portfolio">
-          <a href="https://amatesa.github.io/portfolio">
-            ← Back to portfolio
-          </a>
-        </div>
+        <a
+          href="https://amatesa.github.io/portfolio"
+          class="back-link"
+        >
+          ← Back to portfolio
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>Northbridge Coaching — Executive coaching landing page template by Alejandro Matesa</p>
+    <div class="page-shell footer-inner">
+      <p>
+        Northbridge Coaching – Landing template by Alejandro Matesa
+      </p>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
+
 
 
 
