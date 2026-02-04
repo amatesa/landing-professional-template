@@ -1,107 +1,200 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Northbridge Coaching – Consultoría Premium</title>
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Northbridge Coaching – Executive Clarity</title>
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
-  
+
+  <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+  <div class="page-bg">
+    <div class="shell">
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#top" class="brand">
-        <i class="ph ph-cube-transparent text-gradient"></i>
-        <span class="brand-text">Northbridge <span>Coaching</span></span>
-      </a>
+      <!-- HEADER -->
+      <header class="site-header">
+        <div class="container header-inner">
+          <a href="#top" class="brand">
+            <span class="logo-mark">N</span>
+            <span class="brand-text">Northbridge <strong>Coaching</strong></span>
+          </a>
 
-      <nav class="main-nav">
-        <ul class="nav-list">
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="#process">Metodología</a></li>
-          <li><a href="#contact">Contacto</a></li>
-        </ul>
-      </nav>
+          <nav class="main-nav">
+            <a href="#services">Services</a>
+            <a href="#process">Process</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </header>
 
-      <button class="nav-toggle" aria-label="Menu">
-        <span class="hamburger"></span>
-      </button>
+      <main id="top">
+
+        <!-- HERO -->
+        <section class="hero">
+          <div class="hero-glow"></div>
+
+          <div class="container hero-grid">
+            <div class="hero-content" data-aos="fade-up">
+              <span class="eyebrow">Executive Coaching</span>
+
+              <h1 class="hero-title">
+                Clarity for leaders who make
+                <span class="text-gradient">hard calls.</span>
+              </h1>
+
+              <p class="hero-lead">
+                Northbridge helps senior professionals frame complex decisions
+                without adding more noise to their calendar.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#contact" class="btn-primary">
+                  <i class="ph ph-envelope-simple"></i>
+                  Book a conversation
+                </a>
+
+                <a href="#services" class="btn-secondary">
+                  See how it works
+                  <i class="ph ph-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-visual" data-aos="fade-left">
+              <img
+                src="assets/hero-v2.webp"
+                alt="Cinematic executive workspace"
+                class="hero-image"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="services" id="services">
+          <div class="container">
+            <header class="section-header">
+              <span class="eyebrow">What we work on</span>
+              <h2>Services designed for high-stakes work</h2>
+              <p>
+                Each track is focused on helping you make better decisions
+                with less friction.
+              </p>
+            </header>
+
+            <div class="services-grid">
+              <article class="card" data-aos="fade-up">
+                <div class="card-icon"><i class="ph ph-target"></i></div>
+                <h3>Strategic Clarity Sessions</h3>
+                <p>
+                  Deep-dive conversations to untangle complex decisions and
+                  align your next move.
+                </p>
+              </article>
+
+              <article class="card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-icon"><i class="ph ph-chart-line-up"></i></div>
+                <h3>Performance & Focus Coaching</h3>
+                <p>
+                  Ongoing work to protect your focus, reduce context switching,
+                  and set realistic rhythms.
+                </p>
+              </article>
+
+              <article class="card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-icon"><i class="ph ph-stack-simple"></i></div>
+                <h3>Systems & Stakeholder Alignment</h3>
+                <p>
+                  Practical sessions to map expectations, risks and ownership
+                  across teams.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROCESS -->
+        <section class="process" id="process">
+          <div class="container">
+            <header class="section-header">
+              <span class="eyebrow">How it works</span>
+              <h2>A simple process built around your calendar</h2>
+            </header>
+
+            <div class="process-grid">
+              <div class="process-step">
+                <div class="process-icon"><i class="ph ph-magnifying-glass"></i></div>
+                <h3>1. Discover</h3>
+                <p>We clarify your role, context and decision load.</p>
+              </div>
+
+              <div class="process-step">
+                <div class="process-icon"><i class="ph ph-clipboard-text"></i></div>
+                <h3>2. Plan</h3>
+                <p>We define a short, realistic coaching track.</p>
+              </div>
+
+              <div class="process-step">
+                <div class="process-icon"><i class="ph ph-check-circle"></i></div>
+                <h3>3. Execute</h3>
+                <p>We work through decisions and adapt as context shifts.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact" id="contact">
+          <div class="container contact-card" data-aos="zoom-in">
+            <h2 class="text-gradient">Let’s see if we’re a good fit</h2>
+            <p>
+              Share a few lines about your role and what you’re navigating.
+              If coaching isn’t the right tool, we’ll say so.
+            </p>
+
+            <div class="contact-actions">
+              <a href="mailto:hello@northbridge.com" class="btn-primary btn-full">
+                <i class="ph ph-envelope-simple"></i>
+                Email Northbridge
+              </a>
+
+              <a href="#" class="contact-link">
+                <i class="ph ph-linkedin-logo"></i>
+                Connect on LinkedIn
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <p>Northbridge Coaching – Template by Alejandro Matesa</p>
+          <a href="https://amatesa.github.io/portfolio">
+            <i class="ph ph-arrow-left"></i>
+            Back to portfolio
+          </a>
+        </div>
+      </footer>
+
     </div>
-  </header>
-
-  <main>
-    <section class="hero" id="top">
-      <div class="hero-glow"></div>
-      <div class="container">
-        <div class="hero-content" data-aos="fade-up">
-          <span class="badge">Executive Coaching 2.0</span>
-          <h1 class="hero-title">
-            Decisiones claras para <br>
-            <span class="text-gradient">líderes sin ruido.</span>
-          </h1>
-          <p class="hero-lead">
-            Northbridge ayuda a profesionales senior a encuadrar decisiones críticas sin añadir una sola reunión innecesaria a su agenda.
-          </p>
-          <div class="hero-cta-group">
-            <a href="#contact" class="btn-premium">Agendar Llamada</a>
-            <a href="#services" class="btn-link">Ver servicios <i class="ph ph-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="services section-padding" id="services">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <h2 class="section-title">Especialidades</h2>
-        </div>
-        <div class="grid-bento">
-          <div class="card" data-aos="fade-up" data-aos-delay="100">
-            <i class="ph ph-strategy-bold card-icon"></i>
-            <h3>Estrategia Operativa</h3>
-            <p>Optimizamos procesos complejos para que tu equipo rinda al máximo sin quemarse.</p>
-          </div>
-          <div class="card" data-aos="fade-up" data-aos-delay="200">
-            <i class="ph ph-chart-line-up-bold card-icon"></i>
-            <h3>Análisis de Performance</h3>
-            <p>Dashboards claros. Datos que cuentan la verdad para tomar mejores decisiones.</p>
-          </div>
-          <div class="card" data-aos="fade-up" data-aos-delay="300">
-            <i class="ph ph-users-three-bold card-icon"></i>
-            <h3>Liderazgo Cross-functional</h3>
-            <p>Conectamos departamentos para evitar silos de información en tu organización.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact section-padding" id="contact">
-      <div class="container">
-        <div class="contact-card" data-aos="zoom-in">
-          <h2 class="text-gradient">¿Hablamos?</h2>
-          <p>Lleva tu operación al siguiente nivel con una estructura sólida.</p>
-          <a href="mailto:hello@northbridge.com" class="btn-premium">Enviar Email</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2024 Northbridge Coaching</p>
-      <a href="https://amatesa.github.io/portfolio" class="footer-link">
-        <i class="ph ph-arrow-left"></i> Volver al Portfolio
-      </a>
-    </div>
-  </footer>
+  </div>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="script.js"></script>
