@@ -413,15 +413,7 @@ img {
 
 @media (max-width: 900px) {
   .hero {
-    background-image:
-      linear-gradient(
-        to bottom,
-        rgba(3, 7, 18, 0.6) 0%,
-        rgba(3, 7, 18, 0.35) 40%,
-        rgba(3, 7, 18, 0.15) 70%,
-        rgba(3, 7, 18, 0) 100%
-      ),
-      url("assets/hero/hero-mobile.webp");
+    background-image: linear-gradient(to bottom, rgb(97 112 155 / 0%), rgb(3 7 18 / 65%)), url(assets/hero-mobile.webp);
     background-size: cover;
     background-position: center bottom;
   }
@@ -802,6 +794,7 @@ img {
   font-size: 0.85rem;
   color: var(--text-subtle);
 }
+
 
 
 
