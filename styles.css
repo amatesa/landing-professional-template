@@ -276,11 +276,11 @@ img {
   position: relative;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   background-color: var(--bg-hero-overlay);
   background-image:
-    radial-gradient(circle at 20% 0%, rgba(37, 99, 235, 0.5) 0, transparent 45%),
-    radial-gradient(circle at 70% 90%, rgba(56, 189, 248, 0.35) 0, transparent 55%),
+    radial-gradient(circle at 20% 0%, rgba(37, 99, 235, 0.5) 0, transparent 22%),
+    radial-gradient(circle at 90% 90%, rgba(56, 189, 248, 0.35) 0, transparent 25%),
     url("assets/hero-desktop.webp");
   background-size: auto, auto, cover;
   background-position: left top, right bottom, center right;
@@ -415,8 +415,8 @@ img {
   .hero {
     background-image: linear-gradient(
         to bottom,
-        rgba(3, 7, 18, 0.95),
-        rgba(3, 7, 18, 0.3)
+        rgba(3, 7, 18, 0.2),
+        rgba(3, 7, 18, 0.1)
       ),
       url("assets/hero-mobile.webp");
     background-size: cover;
@@ -801,4 +801,5 @@ img {
   font-size: 0.85rem;
   color: var(--text-subtle);
 }
+
 
